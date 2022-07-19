@@ -1,21 +1,4 @@
-# To-do Comments
+# CRUD in VueJS
+Simple authentication application made in VueJS
 
-## Project setup
-```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
-
-### Compiles and minifies for production
-```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
-```
+#### Ps: If you want to test the application just click on the link on the right.
