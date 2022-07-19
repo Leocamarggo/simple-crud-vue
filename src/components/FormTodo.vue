@@ -1,11 +1,7 @@
 <template>
   <div class="form-todo form-group">
-    <p>
-      <input v-model="name" placeholder="Nome" type="text" name="author" class="form-control">
-    </p>
-    <p>
-      <textarea v-model="message" placeholder="Comentário" name="message" class="form-control"></textarea>
-    </p>
+    <input v-model="name" placeholder="Nome" type="text" name="author" class="form-control mb-3">
+    <textarea v-model="message" placeholder="Comentário" name="message" class="form-control mb-3"></textarea>
     <button v-on:click="addComment" type="submit" class="btn btn-primary">Comentar</button>
   </div>
 </template>

@@ -4,6 +4,7 @@
     <hr />
       <FormTodo v-on:add-todo="addComment" />
     <hr />
+
     <h3 v-if="comments.length <= 0">Sem comentários...</h3>
     <div class="list-group">
       <div class="list-group-item mb-4" v-for="(comment, index) in allComments" :key="index">
@@ -14,7 +15,6 @@
           <strong>Comentário:</strong> {{ comment.message }}
         </p>
         <div>
-          <button class="btn btn-warning">Editar</button>
           <button v-on:click="removeComment(index)" class="btn btn-danger">Excluir</button>
         </div>
       </div>
@@ -47,11 +47,6 @@
           ...comment,
           name: comment.name.trim() === '' ? 'Anônimo' : comment.name
         }))
-      }
-    },
-    watch: {
-      comments(value) {
-        console.log(value);
       }
     }
   }
